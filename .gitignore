@@ -1,4 +1,4 @@
 #ignore these dir
 workflow/out/
-.DS*
-.snakemake*
+.snakemake/*
+.DS_Store

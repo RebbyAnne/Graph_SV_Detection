@@ -1,2 +1,4 @@
 #ignore these dir
 workflow/out/
+.DS*
+.snakemake*

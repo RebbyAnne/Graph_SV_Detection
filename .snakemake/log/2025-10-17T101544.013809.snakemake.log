@@ -1,0 +1,38 @@
+Assuming unrestricted shared filesystem usage.
+host: ins085
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+all                  1
+getGraphLinks        1
+total                2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Oct 17 10:15:44 2025]
+localrule getGraphLinks:
+    input: config/graphs/copan_0/copan_0.gfa
+    output: /insomnia001/depts/pmg/users/rc3710/Graph_SV_Detection/workflow/out/link_dicts/copan_0_links.json
+    jobid: 1
+    reason: Missing output files: /insomnia001/depts/pmg/users/rc3710/Graph_SV_Detection/workflow/out/link_dicts/copan_0_links.json
+    wildcards: graph_id=copan_0
+    resources: tmpdir=/tmp
+[Fri Oct 17 10:15:48 2025]
+Finished jobid: 1 (Rule: getGraphLinks)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Fri Oct 17 10:15:48 2025]
+localrule all:
+    input: /insomnia001/depts/pmg/users/rc3710/Graph_SV_Detection/workflow/out/link_dicts/copan_0_links.json
+    jobid: 0
+    reason: Input files updated by another job: /insomnia001/depts/pmg/users/rc3710/Graph_SV_Detection/workflow/out/link_dicts/copan_0_links.json
+    resources: tmpdir=/tmp
+[Fri Oct 17 10:15:48 2025]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /insomnia001/depts/pmg/users/rc3710/Graph_SV_Detection/.snakemake/log/2025-10-17T101544.013809.snakemake.log

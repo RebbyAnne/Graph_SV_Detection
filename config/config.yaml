@@ -1,0 +1,11 @@
+# config.yaml
+
+# Directories
+graphDir: "config/graphs"
+linksDir: "/insomnia001/depts/pmg/users/rc3710/Graph_SV_Detection/workflow/out/link_dicts"
+
+# Graph ID
+graph_id: ["copan_0"]
+
+# Superbubble detection params
+max_path_length: 4

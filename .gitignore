@@ -2,3 +2,6 @@
 workflow/out/
 .snakemake/*
 .DS_Store
+L_crispatus/pangenome/*
+!L_crispatus/pangenome/scripts/
+!L_crispatus/pangenome/scripts/**
